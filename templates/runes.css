@@ -1,0 +1,41 @@
+<!--
+.dragme{
+	position:absolute;
+	z-index: 2;
+	cursor: move;
+	text-align: center;
+	width: 64px;
+	height: 96px;
+	word-wrap: break-word;
+}
+.draged{
+	position:absolute;
+	font-weight: bold;
+	color: #FF0000;
+	z-index: 3;
+	cursor: move;
+	text-align: center;
+	width: 64px;
+	height: 96px;
+}
+.dropme{
+	/*position:relative;*/
+	width: 64px;
+	height: 96px;
+	border-color: #FFFFFF;
+	border-width: 2px;
+	border-style: solid;
+	background-color: #6F6F6F;
+	z-index: 1;
+	
+}
+table.mixtable{
+	border-color: red;
+	border-width: 1px;
+	border-style: solid;
+	background-color: #9F9F9F;
+}
+td.mix_placehold{
+	height: 20px;
+}
+-->

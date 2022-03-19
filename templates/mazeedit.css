@@ -1,0 +1,50 @@
+textarea.dbglog{
+	width: 400px;
+	height: 300px;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+	background-color: navy;
+	color: white;
+	font-weight: bold;
+}
+
+div.debugview{
+	background-color: #000000;
+	width: 401px;
+	height: 325px;
+	visibility: hidden;
+	left: 40%;
+	top: 100px;
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+}
+
+td.currenttile{
+	border-color: #FF0000;
+	border-width: 1px;
+	border-style: solid;
+}
+	
+td.notile{
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+}
+
+td.mazefieldok{
+	border-color : darkgreen;
+	border-width : 1px;
+	border-style : solid;
+	margin: 0px;
+	padding: 0px;
+}
+
+td.mazefielderr{
+	border-color : red;
+	border-width : 1px;
+	border-style : solid;	
+	margin: 0px;
+	padding: 0px;
+}

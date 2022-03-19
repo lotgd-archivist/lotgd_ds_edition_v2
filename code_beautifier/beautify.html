@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>PHP Code Beautifier</title>
+<style>
+<!--
+h1,h3{
+	Font-Family : Verdana, Helvetica, Arial, Sans-Serif;
+	Font-Weight : bold;
+	}
+
+
+h1{
+	Font-Size : 125%;
+	}
+
+
+p, li{
+	Color : #808080;
+	Font-Family : Verdana, Arial, Helvetica, Sans-Serif;
+	Font-Size : 80%;
+	}
+
+
+a{
+	Color : #000080;
+	Text-Decoration : none;
+	}
+
+
+a:hover{
+	Text-Decoration : underline;
+	}
+//-->
+</style>
+</head>
+
+<body>
+<p><a href="http://www.tote-taste.de/X-Project">Home</a></p>
+<h1>PHP Code Beautifier</h1>
+<p><b>This tool is designed to beautify PHP code, applying most of the PEAR standard requirements to it. It can even process really scrambled scripts, e.g. all code in one line, and thus may help you to get scripts into a more readable form.</b></p>
+<h3>What this tool does:</h3>
+<p><b>General:</b></p>
+<ul>
+<li>Sets missing line breaks without removing any additional line breaks that you may use to group related things.</li>
+<li>Corrects wrong indentation according to the level of nested braces.</li>
+</ul>
+<p><b>Pear standard requirements:</b></p>
+<ul>
+<li>Tries to set missing curly braces around single conditional statements. This may not work in all situations.</li>
+<li>Indents with four spaces.</li>
+<li>Uses "one true brace" style in function definitions.</li>
+<li>Sets one space between control keyword and condition.</li>
+<li>Removes space between function calls, parenthesis and beginning of argument list.</li>
+</ul>
+
+<h3>What it doesn't:</h3>
+<p><b>General:</b></p>
+<ul>
+<li>It does not <b>sanity-check or correct your code.</b> This is no debugging tool, it only arranges things properly.</li>
+<li>It does not support the &quot;if: ... endif;&quot; syntax for control structures when indenting.</li>
+<li>This tool is dedicated to beautify php code. In case you use php embedded into html, best thing would be to submit only the php parts.</li>
+</ul>
+<p><b>Pear standard requirements:</b></p>
+<ul>
+<li>It does not add spaces on either side of the assignment operator (but I might add this on request).</li>
+<li>It currently does not convert different php tags into the recommended form.</li>
+<li>It does not do anything about naming conventions or commenting style or the way you include other scripts, this is entirely up to you.</li>
+</ul>
+
+<h3>What can happen in the worst case?</h3>
+<p>Worst thing that may happen is that the output on the following page is not what you expected. In this case, you don't need to do anything at all. Otherwise, if you like what you see, you can simply copy the output from the browser view and paste it into in your scripts.</p>
+<form enctype="multipart/form-data" method="post" action="beautify.php">
+<p><b>Upload</b> a php script from your local system:<br>
+<input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+<input type="hidden" name="submit" value="Upload">
+<input type="file" name="filename" size="60"></p>
+<p><input type="submit" name="submit" value="Upload"></p>
+</form>
+
+<p><b>OR:</b></p>
+
+<form method="post" action="beautify.php">
+<p><b>Enter</b> php code here (please note that very, <i>very</i> long entries may be chopped):<br>
+<textarea rows="20" cols="65" name="code">
+</textarea>
+</p>
+<p><input type="submit" name="submit" value="Submit"></p>
+</form>
+<p><small>Please direct suggestions, bug reports, or any other feedback referring to the original script to <a href="http://www.tote-taste.de/X-Project">http://www.tote-taste.de/X-Project</a></small></p>
+</body>
+
+</html>
